@@ -1,15 +1,12 @@
 import Image from 'next/image'
+import HeroSection from './components/HeroSection'
 
 export default function Home() {
   return (
-    <div className='bg-stone-700'>
-      <Image 
-      src='/mfa-logo.svg'
-      alt='MFA Logo'
-      width={470 / 3}
-      height={200 / 3}
-      quality={100}
-      />
-    </div>
+    <main className='flex min-h-screen flex-col bg-[#121212]'>
+      <div className="container mx-auto px-12 py-4">
+        <HeroSection />
+      </div>
+    </main>
   )
 }
