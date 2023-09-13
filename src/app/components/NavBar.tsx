@@ -24,18 +24,9 @@ path: "#contact",
 export default function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-gradient-to-b from-[#121212] via-[#12280e] to-[#1f4319] rounded-3xl shadow-xl bg-opacity-100 shadow-[#377d2c] '>
-      <div className='flex flex-wrap items-center justify-between  mx-auto px-4'>
-        <Link className="text-5xl font-semibold" href="/">
-          <Image
-            src='/mfa-logo.svg'
-            alt='MFA Logo'
-            width={200}
-            height={200}
-            quality={100}
-            className='mb-2'
-          />
-        </Link>
+      <nav className='fixed top-0 left-0 right-0 z-10 rounded-md bg-opacity-100 bg-inherit border-b-[2.5px] border-[#8ff9ff]'>
+      <div className='h-16 flex items-center justify-end  mx-auto px-4'>
+
         <div className='mobile-menu block md:hidden'>
         {
           !navbarOpen ? (

@@ -8,7 +8,7 @@ const NavLink = ({ href, title }: NavLinkProps) => {
     href={href}
     className="block py-2 pl-3 pr-4 text-[#b8b6b6] sm:text-xl rounded md:p-0 hover:text-white"
     >
-    {title}
+        {title}
     </Link>
   );
 };
